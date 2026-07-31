@@ -1,0 +1,14 @@
+ListTile(
+  leading: const Icon(Icons.devices),
+  title: const Text("Manage Device"),
+  subtitle: const Text("Connect your FocusPod"),
+  trailing: const Icon(Icons.chevron_right),
+  onTap: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => const DeviceScreen(),
+      ),
+    );
+  },
+),
