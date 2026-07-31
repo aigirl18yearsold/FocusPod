@@ -1,0 +1,15 @@
+floatingActionButton: FloatingActionButton(
+  onPressed: () async {
+    final result = await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => const AddScheduleScreen(),
+      ),
+    );
+
+    if (result == true) {
+      (context as Element).markNeedsBuild();
+    }
+  },
+  child: const Icon(Icons.add),
+),
