@@ -1,0 +1,10 @@
+firmware/
+│
+├── src/
+│   └── main.cpp
+│
+├── include/
+│
+├── lib/
+│
+└── platformio.ini
